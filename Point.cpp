@@ -38,6 +38,11 @@ public:
     }
 };
 
+/**
+ *1,在类外部声明成员函数。void Point::Area(){};搜索
+ *2,调用全局函数；表示引用成员函数变量及作用域，作用域成员运算符 例：System::Math::Sqrt() 相当于System.Math.Sqrt()。
+ *3,调用类的静态方法： 如：CDisplay::display()
+ **/
 Point::Point(const Point &p) {
     X = p.X;
     Y = p.Y;
